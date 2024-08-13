@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Gym enquiry form</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1 id="title">Gym Enquiry Form</h1>
+  <p id="description">Please fill out this form to better guide you in your fitness journey</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for ="name"> Enter your name: <input id="name" type="text" placeholder="name" required /></label>
+      <label id="email-label"for="email"> Enter your email: <input id="email" type="email" placeholder="email" required/></label>
+      <label for="contact-number">Enter your contact number:<input id="contact-number" type="number" placeholder="contact number" required/></label>
+      <label id="number-label" for="number"> Enter your age: <input id="number" type="number" min="16" max="65" placeholder="age" required/></label>
+    </fieldset>
+    <fieldset>
+      <legend>Fitness Goals(required)</legend>
+    <label for="dropdown">Which option best describes your fitness goals?
+    <select id="dropdown">
+      <option>(select one)</option>
+      <option>Weight Loss</option>
+      <option>Muscle gain(bodybuilding)</option>
+      <option>Endurance Training</option>
+      <option>Flexibility & Mobility</option>
+      <option>Other</option>
+     </select>
+     </label>
+    <label for="hours">How many hours in a week can you commit to a gym workout?
+      <select id="hours">
+        <option value="">(select one)</option>
+        <option value="1">more than 7 hours</option>
+        <option value="2">(3-6) hours</option>
+        <option value="3">(1-3) hours</option>
+        <option value="4">less than 1 hour</option>
+        </select>
+     <label> 
+    </fieldset>
+    <fieldset>
+      <legend> Medical history(required)</legend>
+      <label>Do you have any previous history of medical illness we should know of?</label>
+      <label for="positive"><input type="radio" name="medical-history" class="inline" checked id="positive" value="Yes"/>Yes</label>
+      <label for="negative"><input type="radio" name="medical-history" id="negative" value="No" class="inline"/>No</label>
+      <label for="condition">If Yes,please give a brief of the condition so as to help you better:<textarea id="condition" rows="3" cols="30" placeholder="I have had this condition since..."></textarea></label>
+      <label for="comments">Please feel free to add anything you think should be known to us:<textarea id="comments" rows="3" cols="30"></textarea></label>
+      <label for="subscribe"><input type="checkbox" class="inline" name="subscribe" value="1" required/> Subscribe to our newsletter
+      </fieldset>
+    <label for="terms-and-conditions">
+      <input id="terms-and-conditions" type="checkbox"class="inline" name="terms" value="1"required />I accept the <a href="https://survey-form.freecodecamp.rocks">terms and conditions
+    <input id="submit"type="submit" value="Submit">
+     
+
